@@ -1,3 +1,24 @@
+## Project Installation
+1. First clone the repository in your local you need to have mysql and have a database already created and configured in the .env of the project (create it if you don't have it), in which you will execute the migrations.
+2. Execute the migrations with the following command
+```bash
+  php artisan migrate
+```
+3. Run the npm command to install dependencies and styles
+```bash
+  npm install
+  npm run dev
+```
+4. Finally, execute the command:
+```bash
+  php artisan serve
+```
+
+so that the laravel server is up and you can go to the path *http://127.0.0.1:8000*.
+
+**The flowchart is in the main path of the project.**
+
+## About Laravel
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
@@ -6,8 +27,6 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
-
-## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
