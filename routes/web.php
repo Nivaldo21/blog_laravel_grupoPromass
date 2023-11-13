@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\EntryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +15,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/entries');
 });
+
+Route::get('/entries/search', [EntryController::class, 'search']);
+Route::get('/entries', [EntryController::class, 'index']);
+Route::get('/entries/create', [EntryController::class, 'create']);
+Route::post('/entries', [EntryController::class, 'store']);
+Route::get('/entries/{entry}', [EntryController::class, 'show']);
+
+
